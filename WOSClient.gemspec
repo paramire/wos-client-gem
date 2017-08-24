@@ -5,7 +5,7 @@ require "WOSClient/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "WOSClient"
-  spec.version       = WOSClient::VERSION
+  spec.version       = WosClient::VERSION
   spec.authors       = ["pablo reyes"]
   spec.email         = ["pablo.reyes51@gemail.com"]
 
