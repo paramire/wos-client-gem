@@ -1,3 +1,3 @@
-module WosClient
-  VERSION = "0.1.3"
+module WOSClient
+  VERSION = "0.1.0"
 end

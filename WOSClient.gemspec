@@ -4,8 +4,8 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "WOSClient/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "WOSClient"
-  spec.version       = WosClient::VERSION
+  spec.name          = "wos-client"
+  spec.version       = WOSClient::VERSION
   spec.authors       = ["pablo reyes"]
   spec.email         = ["pablo.reyes51@gemail.com"]
 

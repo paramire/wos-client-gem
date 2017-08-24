@@ -8,7 +8,7 @@ require 'WOSClient/configuration'
 require 'WOSClient/errors/configuration'
 
 
-module WosClient
+module WOSClient
   class << self
     attr_accessor :configuration
   end
