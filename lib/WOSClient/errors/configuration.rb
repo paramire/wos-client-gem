@@ -1,4 +1,4 @@
-module WOSClient
+module WosClient
   module Errors
     class Configuration < StandardError; end
   end

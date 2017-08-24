@@ -1,4 +1,4 @@
-module WOSClient
+module WosClient
 
   # Adds global configuration settings to the gem, including:
   # 
