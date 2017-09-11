@@ -37,11 +37,32 @@ module WOSClient
   # To reset, simply call `WOSClient.reset`.
   # 
   class Configuration
-    attr_accessor :user, :password
+    attr_accessor :user, :password, :auth_url, :search_url, :search_xml
 
     def initialize
       @user = nil
       @password = nil
+      @auth_url = "http://search.webofknowledge.com/esti/wokmws/ws/WOKMWSAuthenticate?wsdl"
+      @search_url = "http://search.webofknowledge.com/esti/wokmws/ws/WokSearch?wsdl"
+      @search_xml = <<-EOF
+                      <queryParameters>
+                          <databaseId>WOS</databaseId>   
+                          <userQuery>CU=chile</userQuery>
+                          <editions>
+                             <collection>WOS</collection>
+                             <edition>SCI</edition>
+                          </editions>           
+                          <timeSpan>
+                             <begin>2000-01-01</begin>
+                             <end>2017-12-31</end>
+                          </timeSpan>
+                          <queryLanguage>en</queryLanguage>
+                      </queryParameters>
+                      <retrieveParameters>
+                          <firstRecord>1</firstRecord>
+                          <count>10</count>           
+                      </retrieveParameters>
+                    EOF
     end
 
     def user
@@ -52,6 +73,18 @@ module WOSClient
     def password
       raise Errors::Configuration, "WOSClient password missing! See the documentation for configuration settings." unless @password
       @password
+    end
+
+    def auth_url
+      @auth_url
+    end
+
+    def search_url
+      @search_url
+    end
+
+    def search_xml
+      @search_xml
     end
   end
 end

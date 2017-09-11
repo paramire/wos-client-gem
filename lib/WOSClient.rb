@@ -7,6 +7,8 @@ require 'pp'
 require 'WOSClient/configuration'
 require 'WOSClient/errors/configuration'
 
+require 'WOSClient/client'
+
 
 module WOSClient
   class << self
