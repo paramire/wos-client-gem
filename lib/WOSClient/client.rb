@@ -2,6 +2,8 @@ module WOSClient
 
   class Client
 
+    attr_accessor : session_cookie
+
     def initialize()
       @client = Savon::Client
       @credentials = [WOSClient.configuration.user, WOSClient.configuration.password]
