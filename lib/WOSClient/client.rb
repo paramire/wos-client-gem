@@ -2,7 +2,7 @@ module WOSClient
 
   class Client
 
-    attr_accessor : session_cookie
+    attr_accessor :session_cookie
 
     def initialize()
       @client = Savon::Client
