@@ -89,8 +89,8 @@ module WOSClient
         xml_s += "<symbolicTimeSpan>" + opts[:symbolic_time_span] + "</symbolicTimeSpan>"
       else
         xml_s += "<timeSpan>"
-        xml_s += "   <begin>" + (opts[:time_span_begin].to_s || '1900-01-01') + "</begin>"
-        xml_s += "   <end>" + (opts[:time_span_end].to_s || Time.now.strftime("%Y-%m-%d")) + "</end>"
+        xml_s += "   <begin>" + (opts[:time_span_begin] || '1900-01-01') + "</begin>"
+        xml_s += "   <end>" + (opts[:time_span_end] || Time.now.strftime("%Y-%m-%d")) + "</end>"
         xml_s += "</timeSpan>"
       end
       xml_s += "  <queryLanguage>" + (opts[:query_language] || "en") + "</queryLanguage>"
