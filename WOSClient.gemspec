@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["pablo reyes"]
   spec.email         = ["pablo.reyes51@gemail.com"]
 
-  spec.summary       = %q{A simple WOS Soap-Based API Client gem}
-  spec.description   = %q{A simple WOS Soap-Based API Client gem}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = "A simple WOS SOAP-Based API Client gem"
+  spec.description   = "A simple WOS SOAP-Based API Client gem"
+  spec.homepage      = "https://github.com/plreyes/wos-client-gem"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
