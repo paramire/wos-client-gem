@@ -1,0 +1,22 @@
+Style/Documentation:
+  Exclude:
+    - 'spec/**/*'
+    - 'test/**/*'
+    - 'lib/WOSClient.rb'
+    - 'lib/WOSClient/client.rb'
+
+Style/TrivialAccessors:
+  Exclude:
+    - 'lib/WOSClient/configuration.rb'
+
+Metrics/LineLength:
+  Max: 120
+
+Metrics/ClassLength:
+  Max: 120
+
+Metrics/MethodLength:
+  Max: 50
+
+Naming/MethodName:
+  Enabled: false
